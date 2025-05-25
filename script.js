@@ -11,7 +11,7 @@ const others = document.querySelector(".others");
 others.style.display = "none";
 
 async function fetchData(query) {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${query}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${query}&aqi=no`;
 
     try {
         const response = await fetch(url);
